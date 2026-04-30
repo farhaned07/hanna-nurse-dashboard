@@ -1,7 +1,8 @@
 {
-  "name": "nurse-dashboard",
+  "name": "hanna-nurse-dashboard",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Nurse command center for Hanna Care Intelligence: priority queue, patient risk review, care plan summary, and nurse actions.",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,6 +10,13 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "keywords": [
+    "hanna",
+    "nurse-dashboard",
+    "command-center",
+    "care-intelligence",
+    "chronic-care"
+  ],
   "dependencies": {
     "@supabase/supabase-js": "^2.87.1",
     "@tailwindcss/postcss": "^4.1.18",
