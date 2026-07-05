@@ -1,43 +1,34 @@
-# Hanna Nurse Dashboard (Mission Control)
+# Hanna Nurse Dashboard — Legacy Prototype
 
-This is the secure "Mission Control" frontend for the Hanna AI Nurse system.
-It is built with React + Vite + Tailwind CSS.
+Early dashboard prototype for the Hanna care-team workflow.
 
-## 🚀 Deployment (Vercel)
+This repository is part of the exploration history for **Hanna Care Intelligence**. The current public dashboard direction is better represented by `hanna-dashboard`.
 
-This repository is designed to be deployed to **Vercel**.
+## Current status
 
-### Prerequisites
-1.  **Backend URL**: The Hanna Backend must be deployed (e.g., on Railway) and accessible.
-2.  **Nurse Token**: A secure shared secret string that matches the `NURSE_DASHBOARD_TOKEN` in the Backend's environment variables.
+```text
+Status: legacy / experimental
+Profile recommendation: do not pin
+Better current reference: hanna-dashboard
+```
 
-### Environment Variables
-Set these in your Vercel Project Settings:
+## Product role explored
 
-| Variable | Description | Example |
-| :--- | :--- | :--- |
-| `VITE_API_URL` | The URL of your deployed Backend | `https://hanna-backend.railway.app` |
-| `VITE_NURSE_TOKEN` | Auth token matching the backend | `han_ops_2024_secure_xyz` |
+The dashboard explored how care teams might review follow-up activity, risk signals, and patient priority after a clinical visit.
 
-### Local Development
+```text
+Visit → Documentation → Care plan → Follow-up → Risk signal → Care-team priority
+```
 
-1.  Use Node v20+
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Set up local `.env`:
-    ```bash
-    cp .env.example .env
-    ```
-    (Edit `.env` to point to `http://localhost:3000` for local backend)
-4.  Run dev server:
-    ```bash
-    npm run dev
-    ```
+## Development
 
-## 🛡️ Security Note
+```bash
+npm install
+npm run dev
+```
 
-This dashboard does **not** use User Authentication (Login/Password).
-It uses a **Gateway Token** (`VITE_NURSE_TOKEN`) which assumes the user is an authorized station.
-**Access Control**: Ensure the production URL is not public, or add Vercel Authentication (Middleware) if extra security is required.
+Deployment-specific secrets and environment variables should be configured outside the repository.
+
+## Portfolio note
+
+This repository should not be the headline dashboard repo. It is retained only as an early prototype record.
